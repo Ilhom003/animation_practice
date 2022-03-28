@@ -1,0 +1,27 @@
+@keyframes mover {
+  from {
+    left: 40px;
+    background-color: red;
+    width: 200px;
+  }
+  to {
+    left:800px;
+    background-color: blue;
+    width: 400px;
+  }
+}
+.main {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  background-color: red;
+  color: wheat;
+  animation-name: mover;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+.main :hover {
+  animation-play-state: paused;
+}
